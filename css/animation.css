@@ -1,0 +1,71 @@
+
+/* //====================Animations===========================// */
+
+
+.fadeIn{
+    -webkit-duration: 3s;  
+     animation-duration: 3s;  /*duracion de la animacion  */
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both; /* se van a cumplir reglas de ida y regreso */
+     -webkit-animation-name: fadeIn;
+     animation-name: fadeIn; /* se declara un nombre para ser ejecutado*/
+
+}
+
+/* // definiendo animaciones que va a realizar esta clase//  */
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to{
+opacity: 1;
+}
+}
+
+.fadeDown{
+    -webkit-duration: 1s;  
+     animation-duration: 1s;  /*duracion de la animacion  */
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both; /* se van a cumplir reglas de ida y regreso */
+     -webkit-animation-name: fadeDown;
+     animation-name: fadeDown; /* se declara un nombre para ser ejecutado*/
+
+}
+
+/* // definiendo animaciones que va a realizar esta clase//  */
+@keyframes fadeDown {
+from {
+opacity: 0;
+-webkit-transform: translate3d(0,-100%,0);
+transform: translate3d(0,-100%,0);
+}
+to{
+opacity: 1;
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+}
+
+.fadeUp{
+    -webkit-duration: 1s;  
+     animation-duration: 1s;  /*duracion de la animacion  */
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both; /* se van a cumplir reglas de ida y regreso */
+     -webkit-animation-name:faceUp;
+     animation-name:faceUp; /* se declara un nombre para ser ejecutado*/
+
+}
+
+/* // definiendo animaciones que va a realizar esta clase//  */
+@keyframes faceUp {
+from {
+opacity: 0;
+-webkit-transform: translate3d(0,100%,0);
+transform: translate3d(0,100%,0);
+}
+to{
+opacity: 1;
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+}

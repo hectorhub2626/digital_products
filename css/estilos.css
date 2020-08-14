@@ -1,0 +1,358 @@
+
+/* ==================//=======Inicia:variables======//===================  */
+
+:root{
+                             /* //====color====// */
+--green-color: rgb(145, 248, 145) ; /*Color del fondo para encabezado y botones*/  
+--black-color:  rgb(49, 38, 38);  /*Color del Texto principal y footer*/          
+--white-color: white;   /*Color del Texto footer y fondo de los productos*/ 
+--gray-color:gray;  /*Color del Texto del encabezador*/ 
+--darkgreen-color:green; /*Color del fondo de los botones al pasar el cursor*/
+
+ /* //====Sombras====//  */
+
+ --box-shadow: 0 0 8px gray; /* Sombras de los productos*/
+
+
+                               /* //====Fuentes====//  */
+--normal-text: 12px; 
+
+
+                            /* //====Espaciado====//  */
+/* Valor determinado para el espacio de padding*/
+--space: 10px; /* afecta tamaño de los botones, emcabezado y la separacion de los productos */                            
+--space2: 20px; /* Afecta la alineacion entre elementos en lista*/
+
+
+/* // ==========Separar elementos en Espacios=======//  */
+
+}
+
+/* ==================//=======Finaliza:variables======//===================  */
+
+
+
+/* ==============Inicia: Estilos Generales============== 
+se recomienda separar por secciones y de esa manera poder accesar 
+mas rapido y podras cambiar tus estilos de una manera mas sencilla */
+
+html, body{  
+    /* se reinician los espaciados 
+    por defecto que tienen algunos navegadores */
+    padding: 0px;
+    margin:0px ;
+    font-size: var(--normal-text);
+    font-family:  Helvetica; 
+
+}
+
+
+ p, label {
+
+    font-size: var(--normal-text);
+} 
+
+
+
+nav {
+   /* Este modificara el emcabezado principal de la pagina WEb  */
+  
+    background-color: var(--green-color);
+    padding: var(--space); 
+    color: var(--white-color);
+    /* alinea los elementos al centro */
+    align-items: center;
+    /* Con esta configuracion se crea el 
+    efecto de separacionde los elementos en la pantalla */
+    display: flex; 
+    justify-content: space-between;
+
+}
+/* ==============Finaliza: Estilos Generales============== 
+
+/* ==============Inicia: Estilos NavBar ============= 
+
+ /* SE MODIFICA EL ESTILO PREDETERMINADO DE LAS LISTAS  */
+nav ul { 
+    display: flex;
+}
+
+nav li {
+    padding-left: var(--space2);
+    list-style: none;
+    
+}
+ /* SE DEBE MODIFICAR EL ESTILO a PREDETERMINADO PARA QUITAR EL
+ SUBRAYADO Y COLOR AZUL CARACTERISTICO  */
+nav li a {
+    color:var(--gray-color);
+    text-decoration: none;
+
+}
+ /* SE  MODIFICA EL ESTILO DEL CURSOR AL PASAR SOBRE LOS BOTONES */
+nav li a:hover { 
+    color: var(--white-color);
+
+}
+
+
+
+/* SE MODIFICA EL ESTILO DE LA IMAGEN PARA CONFIGURAR SU TAMAÑO  */
+.brand_image {
+    width:100px ;
+    height:40px;
+    
+}
+
+.borde2{
+        background-color:var(--white-color);
+        height: 30px;
+        justify-content: space-between; 
+} 
+.borde2 img {
+    height: 30px;
+}
+/* ==============Finaliza: Estilos NavBar ============= 
+
+
+
+
+/* ======================Inicia: Main section=============================== */
+
+.main_section {
+padding: 10%;
+text-align: center;
+color: var(--black-color);  
+}
+
+/* SE COLOCO EL FONDO UNA IMAGEN DESDE LA CARPETA  */
+.products {
+background-image: url(../images/background_image.png);
+max-height: 50px;
+
+/* ABARCA EL TAMAÑO DEL DEEP QUE TIENE  */
+background-size: cover; 
+background-position: center top;
+/*Asegura que los elementos se separen   */
+padding: 10%; 
+display: flex;
+}
+
+.product{
+padding: var(--space); 
+margin-top: -200px;
+}
+    
+.product .content { 
+background-color:var(--white-color);
+padding: var(--space2);
+box-shadow: var(--box-shadow);
+text-align: center;
+}
+
+.img_content { 
+text-align: center;
+
+
+}
+
+.main_button {
+background-color:var(--green-color);
+width: 100%;
+padding: var(--space); 
+font-size: var(--normal-text); 
+color:var(--white-color);
+border: 0;
+cursor: pointer;
+border-radius: 8px;
+}
+
+.main_button:hover { 
+
+background-color:var(--darkgreen-color);
+
+}
+
+/* ======================Finaliza: Main section=============================== */
+
+
+/* ======================Inicia: Section 2: Features =============================== */
+
+
+    /* SE COLOCO EL FONDO UNA IMAGEN DESDE LA CARPETA  */
+.features {
+    max-height: 150px;
+    /* ABARCA EL TAMAÑO DEL DEEP QUE TIENE  */
+    background-size: cover; 
+    background-position: center top;
+    /*Asegura que los elementos se separen   */
+    padding: 15%;  
+    display: flex;
+    }
+    
+.feature{
+    padding: var(--space); 
+     margin-top: -100px; 
+    }
+        
+.feature .content { 
+    background-color:var(--white-color);
+    padding: var(--space2);
+    text-align: center;
+    }
+    
+.img_feature { 
+    text-align: center;
+    
+    }
+    
+/* ======================Finaliza:Section 2: Features=============================== */
+    
+/* ======================Inicia:Section 3: Mentions=============================== */
+
+
+.mentions_section {
+    padding: 20px;
+    text-align: center;
+    color: var(--black-color);  
+    }
+
+.mentions {
+    max-height: 1050px;
+    /* ABARCA EL TAMAÑO DEL DEEP QUE TIENE  */
+    background-size: cover; 
+    background-position: center top;
+    /*Asegura que los elementos se separen   */
+    /* padding: 15%;  */
+    display: flex;
+    }
+    
+.mention{
+    padding: var(--space); 
+    /* margin-top: -100px; */
+    margin-bottom: 200px;
+    }
+        
+.mention .content { 
+    background-color:var(--white-color);
+    padding: var(--space2);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    }
+    
+.img_mention { 
+    text-align: center;
+    
+    }
+
+
+
+/* ======================Finaliza:Section 3: Mentions=============================== */
+
+
+/* ======================Inicia:Section: Venta =============================== */
+.modulo_pago{
+
+background-color: var(--white-color);
+box-shadow: var(--box-shadow);
+padding: var(--space);
+
+}
+
+.modulo_pago_image{
+
+text-align: center;
+margin: auto;
+
+
+
+}
+
+
+.main_name_product{
+    text-align: center;
+
+}
+
+.data{
+
+margin-top: var(--space);
+margin-bottom: var(--space);
+width: 100%;
+height: 25px;
+border-radius: 2px;
+border: 1px solid;
+box-sizing: border-box;
+}
+
+
+/* ======================Finaliza:Section: Venta =============================== */
+
+
+/* ====================Inicia: Faqs ======================= */
+
+
+.main_faqs{
+
+padding-left: 20%;
+
+}
+
+
+/* ====================Finaliza: Faqs ======================= */
+
+
+
+
+
+/* ====================Inicia: Botones desplazamiento==================== */
+
+
+.netx_page{
+    padding: 10px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.next_button {
+    background-color:var(--green-color);
+    width: 100%;
+    padding: var(--space); 
+    font-size: var(--normal-text); 
+    color:var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+    
+    .next_button:hover { 
+    
+    background-color:var(--darkgreen-color);
+    
+    }
+
+/* ====================Finaliza: Botones desplazamiento==================== */
+
+
+/* ====================Inicia: Footer==================== */
+
+footer {
+
+    background-color: var(--black-color); 
+    padding: var(--space); 
+    /* alinea los elementos al centro */
+    /* Con esta configuracion se crea el 
+    efecto de separacionde los elementos en la pantalla */
+    display: flex; 
+    justify-content: space-between;
+   
+}
+
+footer  a {
+    color: var(--white-color);
+    text-decoration: none;  }
+
+footer   a:hover { 
+    color: var(--green-color);}
+
+/* ====================Finaliza: Footer==================== */
