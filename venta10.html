@@ -75,26 +75,33 @@
                 <!-- //Falta agregar el paypal// -->
                 <h3 class="venta_mensaje">Completa tus datos para hacer pedido </h3> 
 
-                  <form action="falla.html"> 
-                      <label for="name">
-                          Nombre
-                      </label>
-                      <br>
-                  <input type="text" placeholder=" " name="name" class="data"> 
-                    <br> 
-                 <label for="mail">
-                      E-mail
-                 </label>
-                 <br>
-                 <input type="text" placeholder=" " name="email" class="data">
-                 <br> 
-                  <label for="phone">
-                      Telefono
-                  </label>
-                  <br>
-                  <input type="text" placeholder=" "  name="phone" class="data">
-                  <input type="submit" class="main_button" name="submit" value="Confirmar Pago">
-
+                  <form name="miformulario" id="miformulario" method="get" autocomplete="on" action="exito.html"  > 
+                                    <label for="name">
+                                       Nombre
+                                    </label>
+                                 <br>
+                                           <input type="text" placeholder=" " name="name" class="data" required> 
+                                 <br> 
+                                 <label for="name">
+                                    Apellido
+                                 </label>
+                              <br>
+                                        <input type="text" placeholder=" " name="name" class="data" required> 
+                              <br> 
+                                      <label for="mail">
+                                            E-mail
+                                       </label>
+                                <br>
+                                            <input type="email" placeholder=" Coloca tu correo electronico" name="email" id="email" class="data" required>
+                                <br> 
+                                        <label for="phone">
+                                                 Telefonos
+                                        </label>
+                                 <br>         
+                                            
+                                 <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="código de área sin el cero '0' seguido del numero completo:412-1234567"  name="phone" class="data" required>
+                                
+                                 <input type="submit" class="main_button" name="submit" value="Confirmar Pago">
                    
                   </form>
                   <p class="venta_sugerencia"> **Por favor asegurese que los datos ingresados sean correctos</p>

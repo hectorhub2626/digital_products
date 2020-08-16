@@ -3,7 +3,7 @@
 
 :root{
                              /* //====color====// */
---green-color: rgb(145, 248, 145) ; /*Color del fondo para encabezado y botones*/  
+--green-color: rgb(54, 233, 54) ; /*Color del fondo para encabezado y botones*/  
 --black-color:  rgb(49, 38, 38);  /*Color del Texto principal y footer*/          
 --white-color: white;   /*Color del Texto footer y fondo de los productos*/ 
 --gray-color:gray;  /*Color del Texto del encabezador*/ 
